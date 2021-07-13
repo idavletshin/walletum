@@ -548,11 +548,11 @@ body {
 }
 
 .main-title:before {
-  left: -1000px;
+  left: -40%;
 }
 
 .main-title:after {
-  left: 1400px;
+  left: 90%;
 }
 
 .main-subtitle {
@@ -667,6 +667,11 @@ body {
 
   .main-title {
     margin-bottom: 10px;
+  }
+
+  .main-title:before,
+  .main-title:after {
+    display: none;
   }
 
   .main-subtitle {
