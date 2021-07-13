@@ -90,6 +90,7 @@ body {
 .main {
   position: relative;
   z-index: 1;
+  overflow: hidden;
 }
 
 @media screen and (max-width : 1520px) {
@@ -548,11 +549,11 @@ body {
 }
 
 .main-title:before {
-  left: -40%;
+  left: -900px;
 }
 
 .main-title:after {
-  left: 90%;
+  left: 1400px;
 }
 
 .main-subtitle {
@@ -599,6 +600,15 @@ body {
   .main-title {
     font-size: 11.458vw;
   }
+
+  /* 
+  .main-title:before {
+    left: -52.083vw;
+  }
+
+  .main-title:after {
+    left: 72.917vw;
+  } */
 
   .main-subtitle {
     font-size: 1.563vw;
