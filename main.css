@@ -90,7 +90,6 @@ body {
 .main {
   position: relative;
   z-index: 1;
-  overflow: hidden;
 }
 
 @media screen and (max-width : 1520px) {
