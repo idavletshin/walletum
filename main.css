@@ -157,7 +157,7 @@ body {
 
 @media screen and (max-width : 768px) {
 
-  .logo__text {
+  .logo {
     display: none;
   }
 }
@@ -266,6 +266,12 @@ body {
   }
 }
 
+@media screen and (max-width: 533px) {
+  .menu {
+    font-size: 12px;
+  }
+}
+
 /* *** */
 
 /* Стили для блока с выбором языка */
@@ -289,6 +295,22 @@ body {
   color: #fff;
   border-bottom: 2px solid #F49C0B;
 }
+
+@media screen and (max-width: 768px) {
+  .lang {
+    font-size: 14px;
+  }
+  
+}
+
+
+@media screen and (max-width: 533px) {
+  .lang {
+    font-size: 12px;
+  }
+  
+}
+
 
 /* *** */
 
@@ -418,6 +440,15 @@ body {
   }
 }
 
+@media screen and (max-width: 533px) {
+
+  .brand,
+  .advantages {
+    margin-bottom: 30px;
+  }
+}
+
+
 /* *** */
 
 /* Общие стили для заголовков */
@@ -429,7 +460,7 @@ body {
 }
 
 .title-wrap .title {
-  margin-bottom: 40px;
+  margin-bottom: 2.083vw;
   font-size: 90px;
   font-weight: 700;
 }
@@ -437,7 +468,7 @@ body {
 .title-wrap .shadow {
   position: absolute;
   width: max-content;
-  color: #161626;
+  color: rgba(22, 22, 38, 0.7);
   font-size: 180px;
   font-weight: 700;
   transform: translate(-50%, -73%);
@@ -464,27 +495,46 @@ body {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1280px) {
   .title-wrap .desc {
     font-size: 20px;
   }
 }
 
+
+@media screen and (max-width: 1024px) {
+  .title-wrap .desc {
+    font-size: 18px;
+  }
+}
+
 @media screen and (max-width: 768px) {
-
-  .title-wrap .title {
-    margin-bottom: 20px;
-    font-size: 24px;
-  }
-
-  .title-wrap .shadow {
-    font-size: 40px;
-    transform: translate(-50%, -74%);
-  }
 
   .title-wrap .desc {
     width: 100%;
+    margin-bottom: 45px;
     font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 533px) {
+
+  .title-wrap {
+    padding-top: 20px;
+  }
+
+  .title-wrap .title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  .title-wrap .shadow {
+    font-size: 32px;
+    transform: translate(-50%, -131%);
+  }
+
+  .title-wrap .desc {
+    font-size: 12px;
   }
 }
 
@@ -525,16 +575,15 @@ body {
 .main-title-wrap:after {
   height: 400px;
   width: 600px;
-  background: no-repeat url('./images/logo.svg') center/ cover;
+  background: no-repeat url('./images/logo_big.png') center/ cover;
   transform: translate(-42%, -20%);
 }
 
 .main-title {
   font-size: 220px;
-  font-family: 'Manrope', sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1;
-  text-shadow: 1200px 0 0 #161626, -1200px 0 0 #161626;
+  text-shadow: 10px 10px 3px rgba(255, 255, 255, 0.1);
 }
 
 .main-subtitle {
@@ -551,8 +600,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
-  margin: 20px;
+  width: 33%;
+  /* margin: 20px; */
 }
 
 .brand__link {
@@ -569,7 +618,7 @@ body {
 }
 
 .brand__item span {
-  margin-right: 24px;
+  margin-right: 16px;
 }
 
 .brand__item img {
@@ -606,10 +655,6 @@ body {
 
 @media screen and (max-width: 1280px) {
 
-  .brand__item {
-    margin: 10px;
-  }
-
   .brand__link {
     font-size: 20px;
   }
@@ -621,17 +666,28 @@ body {
     font-size: 1.953vw;
   }
 
-  .brand__list {
+  .brand .brand__list {
     flex-direction: column;
     align-items: center;
+    margin-top: 11.719vw;
   }
 
   .brand__item {
+    max-width: 450px;
     width: 100%;
+    margin-bottom: 20px;
+    padding: 25px;
+    background-color: #131325;
+    border-radius: 10px;
   }
 
   .brand__link {
+    width: 100%;
     font-size: 18px;
+  }
+
+  .brand__link span {
+    margin-right: auto;
   }
 
   .brand__item img {
@@ -648,6 +704,7 @@ body {
   }
 
   .main-title {
+    margin-top: 220px;
     margin-bottom: 10px;
   }
 
@@ -658,6 +715,15 @@ body {
 
   .main-subtitle {
     font-size: 16px;
+    text-transform: none;
+  }
+
+  .brand .brand__list {
+    margin-top: 0;
+  }
+
+  .brand__item {
+    padding: 15px 25px;
   }
 
   .brand__link {
@@ -680,8 +746,22 @@ body {
 }
 
 @media screen and (max-width: 533px) {
+
+  .main-title-wrap {
+    margin-top: 70px;
+  }
+
   .main-title {
-    font-size: 50px;
+    margin-top: 200px;
+    font-size: 40px;
+  }
+
+  .main-subtitle {
+    font-size: 14px;
+  }
+
+  .brand__link {
+    font-size: 14px;
   }
 }
 
@@ -741,9 +821,24 @@ body {
     text-align: center;
   }
 
+  .advantages__image {
+    margin-bottom: 20px;
+  }
+
   .advantages__subtitle {
     margin-bottom: 10px;
     font-size: 16px;
+  }
+
+  .advantages__text {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 533px) {
+
+  .advantages__text {
+    font-size: 12px;
   }
 }
 
@@ -785,7 +880,7 @@ body {
 .blockchain__text {
   margin-left: 16px;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -795,12 +890,35 @@ body {
 
 @media screen and (max-width: 1024px) {
 
+  .blockchain__list {
+    align-items: center;
+  }
+
   .blockchain__item {
-    margin: 0 0 20px;
+    align-items: center;
+    max-width: 450px;
+    width: 100%;
+    margin: 0 0 25px;
+    padding: 28px 24px;
   }
 
   .blockchain__text {
     font-size: 20px;
+  }
+
+  .blockchain__item:nth-child(1) {
+    background-position: 70% 50%;
+    background-size: 40%;
+  }
+  
+  .blockchain__item:nth-child(2) {
+    background-position: 70% 50%;
+    background-size: 40%;
+  }
+  
+  .blockchain__item:nth-child(3) {
+    background-position: 70% 50%;
+    background-size: 40%;
   }
 }
 
@@ -816,12 +934,40 @@ body {
   }
 }
 
+@media screen and (max-width: 533px) {
+
+    .blockchain {
+      margin-bottom: 50px;
+  }
+  
+
+  .blockchain__item {
+    padding: 20px 18px;
+  }
+
+  .blockchain__item:nth-child(1) {
+    background-size: 65%;
+  }
+  
+  .blockchain__item:nth-child(2) {
+    background-size: 65%;
+  }
+  
+  .blockchain__item:nth-child(3) {
+    background-size: 65%;
+  }
+}
+
 /* *** */
 
 /* Стили для блока с соц сетями */
 
 .socials {
-  margin: 200px 0 400px;
+  margin: 200px 0 300px;
+}
+
+.socials__image {
+  display: none;
 }
 
 .socials__list {
@@ -860,12 +1006,30 @@ body {
 
 @media screen and (max-width: 768px) {
   .socials {
-    margin: 19.531vw 0 32.552vw;
+    /* margin: 19.531vw 0 32.552vw; */
+    /* margin: 62.083vw 0 0; */
+    margin: 0;
+  }
+
+  .socials__image {
+    display: block;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
+  .socials .socials__list {
+    margin-top: 100px;
   }
 
   .socials__list:before {
-    width: 58.594vw;
+    display: none;
+    /* width: 58.594vw;
     height: 58.594vw;
+    top: -62.083vw;
+    height: 350px;
+    width: 350px; */
   }
 
   .socials__item {
@@ -886,9 +1050,17 @@ body {
   font-size: 18px;
 }
 
+.footer__wrapper {
+  display: flex;
+}
+
 @media screen and (max-width: 1024px) {
   .footer__copyright {
     font-size: 16px;
+  }
+
+  .footer .menu__item {
+    margin: 0 14px;
   }
 }
 
@@ -896,6 +1068,11 @@ body {
 
   .footer {
     flex-direction: column-reverse;
+  }
+
+  .footer__wrapper {
+    width: 100%;
+    justify-content: space-around;
   }
 
   .footer__copyright {
@@ -909,6 +1086,15 @@ body {
     text-align: center;
   }
 
+  .footer .menu__item {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 533px) {
+  .footer__copyright {
+    font-size: 12px;
+  }
 }
 
 /* *** */
