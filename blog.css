@@ -1,0 +1,414 @@
+.blog__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 990px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.blog__wrap {
+  margin-bottom: 16px;
+}
+
+.blog__main-title,
+.blog__title,
+.blog__main-subtitle,
+.blog__subtitle {
+  font-weight: 700;
+}
+
+.blog__main-title small,
+.blog__title small {
+  display: block;
+  margin-top: 40px;
+  font-weight: 500;
+}
+
+.blog__main-title {
+  margin-bottom: 64px;
+  font-size: 60px;
+}
+
+.blog__main-title,
+.blog__title {
+  line-height: 1.4;
+}
+
+.blog__main-title small,
+.blog__title small {
+  line-height: 1.5;
+}
+
+.blog__main-title small,
+.blog__main-subtitle {
+  font-size: 28px;
+}
+
+.blog__title {
+  margin-bottom: 32px;
+  font-size: 36px;
+}
+
+.blog__title small,
+.blog__subtitle {
+  font-size: 22px;
+}
+
+.blog__main-subtitle {
+  margin-bottom: 28px;
+}
+
+.blog__subtitle {
+  margin-bottom: 36px;
+}
+
+.blog__text {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.blog__image-wrap {
+  margin-top: 16px;
+  margin-bottom: 56px;
+}
+
+.blog__image-wrap img {
+  max-width: 930px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 28px;
+  border-radius: 14px;
+}
+
+.blog__image-wrap figcaption {
+  margin-bottom: 12px;
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.color-gradient {
+  background: -webkit-linear-gradient(45deg, #B3FFAB, #12FFF7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.blog__list {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.blog__item {
+  position: relative;
+  margin-bottom: 32px;
+  padding-left: 40px;
+}
+
+.blog__item:before {
+  position: absolute;
+  content: '';
+  top: 6px;
+  left: 6px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: #2997FF;
+  border-radius: 50%;
+}
+
+.blog__table {
+  margin-bottom: 56px;
+  font-size: 14px;
+}
+
+.blog__table-row {
+  display: flex;
+  margin-bottom: 8px;
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+.blog__table-box {
+  display: flex;
+}
+
+.blog__table-box:first-child {
+  margin-right: auto;
+}
+
+.blog__table-box:first-child div {
+  margin-left: 0;
+}
+
+.blog__table-row:nth-child(2n-1) {
+  background-color: #151522;
+}
+
+.blog__table-item {
+  margin-left: 48px;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .blog__container {
+    padding: 0 25px;
+  }
+
+  .blog__main-title {
+    margin-bottom: 48px;
+    font-size: 48px;
+  }
+
+  .blog__main-title small,
+  .blog__title small {
+    margin-top: 32px;
+  }
+
+  .blog__main-title small,
+  .blog__main-subtitle {
+    font-size: 24px;
+  }
+
+  .blog__title {
+    margin-bottom: 28px;
+    font-size: 32px;
+  }
+
+  .blog__title small,
+  .blog__subtitle {
+    font-size: 20px;
+  }
+
+  .blog__main-subtitle {
+    margin-bottom: 24px;
+  }
+
+  .blog__subtitle {
+    margin-bottom: 28px;
+  }
+
+  .blog__text {
+    margin-bottom: 32px;
+    font-size: 16px;
+  }
+
+  .blog__image-wrap {
+    margin-top: 12px;
+    margin-bottom: 48px;
+  }
+
+  .blog__image-wrap img {
+    margin-bottom: 24px;
+  }
+
+  .blog__item {
+    margin-bottom: 24px;
+    padding-left: 36px;
+  }
+
+  .blog__table {
+    margin-bottom: 48px;
+  }
+
+  .blog__table-row {
+    padding: 10px 20px;
+  }
+
+  .blog__table-item {
+    margin-left: 36px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .blog__container {
+    padding: 0 20px;
+  }
+
+  .blog__wrap {
+    margin-bottom: 12px;
+  }
+
+  .blog__main-title {
+    margin-bottom: 36px;
+    font-size: 36px;
+    line-height: 1.3;
+  }
+
+  .blog__main-title small,
+  .blog__title small {
+    margin-top: 24px;
+  }
+
+  .blog__main-title small,
+  .blog__main-subtitle {
+    font-size: 18px;
+  }
+
+  .blog__title {
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+
+  .blog__title small,
+  .blog__subtitle {
+    font-size: 18px;
+  }
+
+  .blog__main-subtitle {
+    margin-bottom: 20px;
+  }
+
+  .blog__subtitle {
+    margin-bottom: 24px;
+  }
+
+  .blog__text {
+    margin-bottom: 24px;
+    font-size: 14px;
+  }
+
+  .blog__image-wrap {
+    margin-top: 10px;
+    margin-bottom: 36px;
+  }
+
+  .blog__image-wrap img {
+    margin-bottom: 20px;
+  }
+
+  .blog__image-wrap figcaption {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+
+  .blog__list {
+    margin-bottom: 6px;
+    font-size: 14px;
+  }
+
+  .blog__item {
+    margin-bottom: 20px;
+    padding-left: 32px;
+  }
+
+  .blog__item:before {
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+  }
+
+  .blog__table {
+    margin-bottom: 36px;
+    font-size: 12px;
+  }
+
+  .blog__table-row {
+    margin-bottom: 6px;
+    padding: 10px 16px;
+  }
+
+  .blog__table-item {
+    margin-left: 24px;
+  }
+}
+
+@media screen and (max-width: 533px) {
+
+  .blog__wrap {
+    margin-bottom: 8px;
+  }
+
+  .blog__main-title {
+    margin-bottom: 28px;
+    font-size: 28px;
+    line-height: 1.2;
+  }
+
+  .blog__main-title small,
+  .blog__title small {
+    margin-top: 16px;
+  }
+
+  .blog__main-title small,
+  .blog__main-subtitle {
+    font-size: 16px;
+  }
+
+  .blog__title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+
+  .blog__title small,
+  .blog__subtitle {
+    font-size: 16px;
+  }
+
+  .blog__main-subtitle {
+    margin-bottom: 16px;
+  }
+
+  .blog__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .blog__text {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
+
+  .blog__image-wrap {
+    margin-top: 8px;
+    margin-bottom: 24px;
+  }
+
+  .blog__image-wrap img {
+    margin-bottom: 16px;
+  }
+
+  .blog__image-wrap figcaption {
+    margin-bottom: 8px;
+    font-size: 10px;
+    line-height: 1.2;
+  }
+
+  .blog__list {
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+
+  .blog__item {
+    margin-bottom: 16px;
+    padding-left: 28px;
+  }
+
+  .blog__item:before {
+    top: 4px;
+    left: 4px;
+    width: 8px;
+    height: 8px;
+  }
+
+  .blog__table {
+    margin-bottom: 24px;
+    font-size: 11px;
+  }
+
+  .blog__table-row {
+    margin-bottom: 4px;
+  }
+
+  .blog__table-box:last-child {
+    flex-direction: column;
+  }
+
+  .blog__table-box:last-child div:not(:last-child) {
+    margin-bottom: 12px;
+  }
+
+  .blog__table-item {
+    margin-left: 16px;
+  }
+}
