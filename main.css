@@ -373,18 +373,18 @@ body {
   }
 
   .header__menu .menu__item:nth-child(1) {
-    top: -52px;
-    right: -47px;
+    top: -47px;
+    right: -37px;
   }
 
   .header__menu .menu__item:nth-child(2) {
-    top: -38px;
-    right: -43px;
+    top: -30px;
+    right: -34px;
   }
 
   .header__menu .menu__item:nth-child(3) {
-    top: -41px;
-    right: -62px;
+    top: -35px;
+    right: -56px;
   }
 
   .header__menu.active .menu__item {
@@ -447,7 +447,6 @@ body {
     margin-bottom: 30px;
   }
 }
-
 
 /* *** */
 
@@ -538,7 +537,6 @@ body {
   }
 }
 
-
 /* *** */
 
 /* Стили для блока с брендом */
@@ -601,7 +599,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 33%;
-  /* margin: 20px; */
 }
 
 .brand__link {
@@ -1006,14 +1003,12 @@ body {
 
 @media screen and (max-width: 768px) {
   .socials {
-    /* margin: 19.531vw 0 32.552vw; */
-    /* margin: 62.083vw 0 0; */
     margin: 0;
   }
 
   .socials__image {
     display: block;
-    max-width: 350px;
+    max-width: 260px;
     width: 100%;
     height: auto;
     margin: auto;
@@ -1025,11 +1020,6 @@ body {
 
   .socials__list:before {
     display: none;
-    /* width: 58.594vw;
-    height: 58.594vw;
-    top: -62.083vw;
-    height: 350px;
-    width: 350px; */
   }
 
   .socials__item {
@@ -1084,6 +1074,10 @@ body {
   .footer__copyright {
     margin: 10px 0;
     text-align: center;
+  }
+
+  .footer .menu__list {
+    margin: 0;
   }
 
   .footer .menu__item {
